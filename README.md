@@ -2,6 +2,8 @@
 
   * [Pages](#pages)
   * [Technologies used](#technologies-used)
+  * [Usase](#usase)
+  * [License}(#license)
 
 ##  Pages
 
