@@ -2,7 +2,7 @@
 
   * [Pages](#pages)
   * [Technologies used](#technologies-used)
-  * [Usase](#usase)
+  * [Usage](#usage)
   * [License}(#license)
 
 ##  Pages
