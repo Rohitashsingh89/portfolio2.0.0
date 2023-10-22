@@ -25,7 +25,6 @@ This project was created using the following technologies.
 - [React icons](https://react-icons.github.io/react-icons/) 
  - [Tailwind CSS](https://tailwindcss.com/)
 - [React Hooks  ](https://reactjs.org/docs/hooks-intro.html) 
-- [daisyUI  ](https://daisyui.com/docs/changelog/)
 
 ## Usage
 
