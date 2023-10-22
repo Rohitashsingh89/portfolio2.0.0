@@ -31,8 +31,8 @@ const BlogDetail = () => {
   }, [blog_path]);
 
   return (
-    <div className="mt-20">
-      <h1 className="t text-center text-4xl">{blog?.title}</h1>
+    <div className="container mt-20 max-w-3xl mx-auto">
+      <h1 className="text-center text-4xl mb-6">{blog?.title}</h1>
       <div className="text-center my-8">
         <LazyLoadImage
           placeholderSrc={placeholderImage}
@@ -43,14 +43,14 @@ const BlogDetail = () => {
       </div>
       <div className="flex items-center justify-between flex-wrap mt-16 mb-4">
         <span>
-          <strong className="text-primary">Gilbert Hutapea</strong>
+          <strong className="text-primary">Rohitash Singh</strong>
         </span>
         <span>
           <strong className="text-primary">{blog?.date}</strong>
         </span>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-        <div className="md:col-span-2 lg:col-span-3">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="container me-auto md:col-span-4 lg:col-span-4 mr-auto">
           {blog?.description?.split("\n")?.map((s, i) => (
             <React.Fragment key={i + 1}>
               <p className="text-neutral text-justify">{s}</p>
@@ -58,6 +58,7 @@ const BlogDetail = () => {
             </React.Fragment>
           ))}
         </div>
+      </div>
         <div className="md:col-span-2 lg:col-span-1 px-4 py-6 rounded shadow-lg">
           <div className="">
             <h4 className="text-lg font-medium mb-3">Other :</h4>
@@ -95,19 +96,19 @@ const BlogDetail = () => {
             Share :{" "}
           </h4>
           <div className="flex items-center gap-4 flex-wrap">
-            <EmailShareButton url={url} title="Gilbert Hutapea ">
+            <EmailShareButton url={url} title="Rohitash Singh">
               <EmailIcon size={32} round={true} />
             </EmailShareButton>
-            <FacebookShareButton url={url} title="Gilbert Hutapea ">
+            <FacebookShareButton url={url} title="Rohitash Singh">
               <FacebookIcon size={32} round={true} />
             </FacebookShareButton>
-            <TwitterShareButton url={url} title="Gilbert Hutapea ">
+            <TwitterShareButton url={url} title="Rohitash Singh ">
               <TwitterIcon size={32} round={true} />
             </TwitterShareButton>
-            <LinkedinShareButton url={url} title="Gilbert Hutapea ">
+            <LinkedinShareButton url={url} title="Rohitash Singh ">
               <LinkedinIcon size={32} round={true} />
             </LinkedinShareButton>
-            <WhatsappShareButton url={url} title="Gilbert Hutapea ">
+            <WhatsappShareButton url={url} title="Rohitash Singh">
               <WhatsappIcon size={32} round={true} />
             </WhatsappShareButton>
           </div>
@@ -115,7 +116,7 @@ const BlogDetail = () => {
           <div className="w-full h-[1px] bg-neutral my-6"></div>
 
           <h4 className="text-lg font-medium mb-3">Tags : </h4>
-          <div>
+          <div className="flex flex-wrap">
             {blog?.tags?.map((tag) => (
               <button
                 key={tag}
@@ -126,7 +127,6 @@ const BlogDetail = () => {
             ))}
           </div>
         </div>
-      </div>
     </div>
   );
 };

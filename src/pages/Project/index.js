@@ -9,7 +9,6 @@ import {
   headingAnimation,
   sectionBodyAnimation,
 } from "../../hooks/useAnimation";
-import {BottomLine} from "../../components";
 
 const Project = () => {
   const [items, setItems] = useState(Items);
@@ -47,13 +46,10 @@ const Project = () => {
           variants={headingAnimation}
         >
           <div className="mb-12">
-            <h3 className="text-neutral text-center">
-              Some of my recent Projects
-            </h3>
-            <h1 className="text-4xl font-semibold text-center">
-              Featured <span className="text-primary">Projects</span>
-            </h1>
-            <BottomLine />
+          <div className="section__title">
+            <h2>My Projects</h2>
+            <p>Check Out My Projects.</p>
+          </div>
           </div>
         </motion.div>
 
@@ -98,14 +94,25 @@ const Project = () => {
             </button>
             <button
             className={`btn btn-sm bg-primary border-2 border-primary text-white hover:bg-transparent hover:border-primary duration-300 mx-3 my-3 sm:my-0 ${
-              activeBtn === "game" && "active-btn"
+              activeBtn === "e-commerce" && "active-btn"
             }`}
             onClick={() => {
-              setActiveBtn("game");
-              filterItem("game");
+              setActiveBtn("e-commerce");
+              filterItem("e-commerce");
             }}
           >
-            Game
+            E Commerce
+          </button>
+            <button
+            className={`btn btn-sm bg-primary border-2 border-primary text-white hover:bg-transparent hover:border-primary duration-300 mx-3 my-3 sm:my-0 ${
+              activeBtn === "open-source" && "active-btn"
+            }`}
+            onClick={() => {
+              setActiveBtn("open-source");
+              filterItem("open-source");
+            }}
+          >
+            Open Source
           </button>
           </div>
 

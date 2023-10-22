@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaDownload } from "react-icons/fa";
-import { RiFolderInfoFill } from "react-icons/ri";
+import { FaDragon } from "react-icons/fa";
+import { FaCloudDownloadAlt } from "react-icons/fa";
 import TypeAnimation from "react-type-animation";
 import { motion } from "framer-motion";
 import Lottie from "react-lottie";
@@ -26,42 +26,40 @@ const Banner = () => {
         transition={{ duration: 1 }}
       >
         <h2 className="text-neutral text-xl font-medium translate-y-[-90%] sm:translate-y-[-0%]">Hello, I'm</h2>
-        <h1 className="text-4xl font-semibold mb-0 translate-y-[-50%] sm:translate-y-[-0%]">Gilbert Hutapea</h1>
+        <h1 className="text-4xl font-semibold mb-0 translate-y-[-50%] sm:translate-y-[-0%]">Rohitash Singh</h1>
         <div className="my-4">
           <TypeAnimation
             className="text-2xl text-primary font-bold translate-y-[-80%] sm:translate-y-[-0%]"
             cursor={true}
             sequence={[
               "A Mern-stack Developer",
-              2000,
+              4000,
+              "A Django Developer",
+              4000,
               "A Full-stack Developer",
-              2000,
+              4000,
               "A Front-end Developer",
-              2000,
+              4000,
+              "A Wordpress Developer",
+              4000,
             ]}
             wrapper="div"
             repeat={Infinity}
           />
         </div>
         <p className="text-neutral max-w-xl mb-6 font-medium translate-y-[-20%] sm:translate-y-[-0%]">
-          As a MERN stack developer, I am committed to building high-quality web
-          applications that meet the needs of my clients. With years of
-          experience in full-stack web development, I specialize in using
-          React.js, Next js, Typescript, MongoDB, Express.js, and Node.js to
-          create scalable and robust web applications.
-          {/* I am a Front-end Developer. I am very passionate to my work and
-          dedicated to explore New Tools And Technologies. */}
+        As a skilled MERN stack developer, I am dedicated to crafting top-notch web applications tailored to my clients' requirements. With extensive experience in full-stack web development, I specialize in utilizing React.js, MongoDB, Express.js, Node.js and Django to build scalable and robust web applications.
         </p>
 
         <div className="flex items-center translate-y-[-60%] sm:translate-y-[-0%]">
           <a
-            href="https://drive.google.com/file/d/19rnbukAhf9oPhadMhsvI3xnWF6FIYeMT/view?usp=share_link"
+            href="https://drive.google.com/file/d/171_m4HtSozlvzeloJ47VxWDUI3PdRlrq/view?usp=share_link"
             target="blank"
           >
             <button className="primary-button">
               <span>My Resume</span>
               <span>
-                <FaDownload />
+                <FaCloudDownloadAlt />
               </span>
             </button>
           </a>
@@ -69,7 +67,7 @@ const Banner = () => {
             <SecondaryBtn>
               <span>About Me</span>
               <span>
-                <RiFolderInfoFill />
+                <FaDragon />
               </span>
             </SecondaryBtn>
           </Link>
@@ -80,6 +78,7 @@ const Banner = () => {
         initial={{ x: "100vw" }}
         animate={{ x: 0 }}
         transition={{ duration: 1 }}
+        style={{ color : 'blue'}}
       >
         <Lottie options={defaultOptions} height="90%" width="90%" />
       </motion.div>

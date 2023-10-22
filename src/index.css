@@ -30,6 +30,71 @@ code {
     monospace;
 }
 
+.section__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.section__title h1,
+.section__title h2 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+  text-align: center;
+  position: relative;
+  width: auto;
+  padding: 0 50px;
+}
+.section__title h1:before,
+.section__title h2:before,
+.section__title h1:after,
+.section__title h2:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  top: 50%;
+  margin-top: -12px;
+}
+.section__title h1:before,
+.section__title h2:before {
+  left: 0;
+  background: url("../src/assets/title--left.svg") no-repeat center;
+}
+.section__title h1:after,
+.section__title h2:after {
+  right: 0;
+  background: url("../src/assets/title--right.svg") no-repeat center;
+}
+.section__title p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #d0d0d0;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.section__title p a {
+  color: #fff;
+  border-bottom: 2px solid #a034fa;
+}
+.section__title p a:hover {
+  border-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .section__title h1,
+  .section__title h2 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+}
 /* Customize Scroll Bar */
 
 /* ::-webkit-scrollbar-track {
@@ -54,7 +119,7 @@ code {
 
 * {
   scrollbar-width: medium;
-  scrollbar-color: #FF651C #313131;
+  scrollbar-color: #3e21f9 #313131;
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -67,7 +132,7 @@ code {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #FF651C;
+  background-color: #3326f1;
   border-radius: 20px;
   border: 3px solid #313131;
 }

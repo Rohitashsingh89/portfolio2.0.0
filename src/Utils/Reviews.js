@@ -1,38 +1,38 @@
 const Reviews = [
   {
     id: 1,
-    name: "Aldi Ramdani",
-    bio: "Mobile Developer",
-    img: "https://i.ibb.co/3M64m0f/aldi.jpg",
+    name: "Ras Bihari",
+    bio: "Full Stack Developer",
+    img: "https://user-images.githubusercontent.com/93479842/277090850-17458eb1-6b5a-4dbd-8390-b5fbc45b6ef9.jpg",
     description:
-      "I am very impressed to work with him. He is a very good and skilled person. I want to work with him again.",
+      "Exceptional service! They delivered beyond expectations, transforming our ideas into a stunning website.",
     rating: 5.0,
   },
   {
     id: 2,
-    name: "Ilham Wahyu Budiaji",
+    name: "Rajesh Kumar",
     bio: "Front-end Developer",
-    img: "https://i.ibb.co/dKYnQM8/ilham.jpg",
+    img: "https://user-images.githubusercontent.com/93479842/277090845-f55597de-af1e-4154-ac44-8ff38c93ec3f.png",
     description:
-      "He is my partner. We work together. When I fall into an error or any other problem he support me always.",
+      "Professional team, timely delivery, outstanding results! They made our project seamless and successful.",
     rating: 5.0,
   },
   {
     id: 3,
-    name: "Dadang Darsono",
-    bio: "CEO MSN Production",
-    img: "https://i.ibb.co/yPSV6Fv/dadang.jpg",
+    name: "Mahesh Sharma",
+    bio: "Full Stack Developer",
+    img: "https://user-images.githubusercontent.com/93479842/277090881-d19a4915-f752-4162-b690-79ae626a070a.jpg",
     description:
-      "I was give him to make an webpage. He made me an awesome website. I recommend himself and wanna work with him again.",
+      "Incredible work! Their expertise and dedication turned our vision into a user-friendly, visually appealing website.",
     rating: 5.0,
   },
   {
     id: 4,
-    name: "Raden Amal Prayogo",
-    bio: "Full Stack Developer",
-    img: "https://i.ibb.co/chG1v0f/Amal.jpg",
+    name: "Kanha Dhanwani",
+    bio: "Data Scientist",
+    img: "https://user-images.githubusercontent.com/93479842/277090874-a9eb8ed4-3d6f-4348-bbd0-8730db597321.jpg",
     description:
-      "I was finding someone to help me to build my Grocery website for my store. He made me an E-commerce Store. I am satisfied with his work.",
+      "Highly recommended! Their attention to detail and creativity elevated our website, boosting our online presence significantly.",
     rating: 5.0,
   },
 ];

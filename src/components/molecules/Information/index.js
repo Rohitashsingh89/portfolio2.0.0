@@ -3,7 +3,6 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import placeholderImage from "../../../assets/placeholder.jpg";
 import blogs from "../../../Utils/blogs";
-import { BottomLine } from "../../../components";
 import { FaAngleRight } from "react-icons/fa";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -39,10 +38,10 @@ const Informasi = () => {
                 animate={viewDiv && "visible"}
                 variants={headingAnimation}
             >
-                <h1 className="text-3xl font-semibold text-center">
-                    New <span className="text-primary">Information</span>
-                </h1>
-                <BottomLine />
+                <div className="section__title">
+                    <h2>My Blogs</h2>
+                    <p>Explore My Featured Blogs.</p>
+                </div>
             </motion.div>
             <div className="mt-10">
                 <motion.div

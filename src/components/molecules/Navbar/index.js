@@ -6,7 +6,7 @@ import {
   RiFolderInfoFill,
 } from "react-icons/ri";
 import { GiCrossMark } from "react-icons/gi";
-import { FaHome, FaDownload } from "react-icons/fa";
+import { FaHome, FaCloudDownloadAlt } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
 import { ImBlog } from "react-icons/im";
 import Drawer from "react-modern-drawer";
@@ -30,7 +30,7 @@ export default function Navbar() {
   const activeLink = ({ isActive }) => {
     return {
       fontWeight: 500,
-      color: isActive && "#FF651C",
+      color: isActive && "#3e21f9",
     };
   };
 
@@ -64,7 +64,7 @@ export default function Navbar() {
       <div className="w-full flex items-center justify-between px-3 md:px-24 py-3">
         <div>
           <Link to="/">
-            <h1 className="text-2xl text-primary font-lobster">Gilbert Hutapea</h1>
+            <h1 className="text-2xl text-primary font-ubuntu font-bold"><span className="text-white font-ubuntu hidden sm:inline-block">RS • </span>Rohitash Singh</h1>
           </Link>
         </div>
         <div>
@@ -83,13 +83,13 @@ export default function Navbar() {
 
             <a
               className="inline-block ml-4"
-              href="https://drive.google.com/file/d/19rnbukAhf9oPhadMhsvI3xnWF6FIYeMT/view?usp=share_link"
+              href="https://drive.google.com/file/d/171_m4HtSozlvzeloJ47VxWDUI3PdRlrq/view?usp=share_link"
               target="blank"
             >
               <PrimaryBtn>
                 <span>Resume</span>
                 <span>
-                  <FaDownload />
+                  <FaCloudDownloadAlt />
                 </span>
               </PrimaryBtn>
             </a>
@@ -131,13 +131,13 @@ export default function Navbar() {
                 <li className="text-center m-4">
                   <a
                     className="inline-block w-full"
-                    href="https://drive.google.com/file/d/19rnbukAhf9oPhadMhsvI3xnWF6FIYeMT/view?usp=share_link"
+                    href="https://drive.google.com/file/d/171_m4HtSozlvzeloJ47VxWDUI3PdRlrq/view?usp=share_link"
                     target="blank"
                   >
                     <button className="primary-button w-full text-white">
                       <span>Resume</span>
                       <span>
-                        <FaDownload />
+                        <FaCloudDownloadAlt />
                       </span>
                     </button>
                   </a>
@@ -145,7 +145,7 @@ export default function Navbar() {
               </ul>
               <div className="text-center">
                 <p className="text-neutral">
-                  &copy; Copyright 2023, Gilbert Hutapea. All Rights Reserved
+                  &copy; Copyright 2023, Rohitash Singh. All Rights Reserved
                 </p>
               </div>
             </Drawer>

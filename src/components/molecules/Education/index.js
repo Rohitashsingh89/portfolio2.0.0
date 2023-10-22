@@ -14,9 +14,10 @@ const Education = () => {
   return (
     <div className="pt-24">
       <div className="mb-12">
-        <h1 className="text-4xl font-semibold drop-shadow-md text-center">
-          My <span className="text-primary">Qualification</span>
-        </h1>
+      <div className="section__title">
+          <h2>Professional Experience</h2>
+          <p>Explore My Professional Experience and Expertise in Detail.</p>
+        </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8">
         <div className="">
@@ -32,38 +33,46 @@ const Education = () => {
           <div className="p-6 bg-[#313131] bg-opacity-90 backdrop-blur-lg rounded-lg shadow-lg inline-block w-[300px] hover:shadow-primary duration-300 cursor-pointer">
             <div className="text-right mb-4">
               <h3 className="text-2xl font-semibold text-primary">
-                Diploma in CSE
+                B.Tech in CSE
               </h3>
-              <p className="text-sm text-neutral font-semibold">2021 - 2025</p>
+              <p className="text-sm text-neutral font-semibold">2020 - 2024</p>
             </div>
             <p className="text-sm text-neutral text-justify">
-              I am currently studying in Informatics Engineering (4th Semester) at Sekolah Tinggi Teknologi Informatika Sony Sugema, Karawang, Jawa Barat, Indonesia
+              I am currently studying in B.Tech Compueter Science and Engineering (Final Year) at <b>BSA College of Engineering and Technology Mathura</b>, Uttar Pradesh, India.
             </p>
           </div>
 
-          {/* React Developer */}
           <div className="my-6 md:my-4 md:ml-[200px] p-6 bg-[#313131] bg-opacity-90 backdrop-blur-lg rounded-lg shadow-lg w-[300px] hover:shadow-primary duration-300 cursor-pointer">
             <div className="text-right mb-4">
               <h3 className="text-2xl font-semibold text-primary">
-                React Developer
+                Software Development Intern
               </h3>
-              <p className="text-sm text-neutral font-semibold">2023</p>
+              <p className="text-sm text-neutral font-semibold">Feb,2023 - May,2023</p>
             </div>
             <p className="text-sm text-neutral text-justify">
-              I have successfully completed the <b>React Web Developer Expert</b>{" "}
-              from Dicoding.
+              I successfully completed a Software Development Internship at <b>Gao Tek Inc</b>., an American-based company.
+            </p>
+          </div>
+          
+          <div className="p-6 bg-[#313131] bg-opacity-90 backdrop-blur-lg rounded-lg shadow-lg w-[300px] hover:shadow-primary duration-300 cursor-pointer">
+            <div className="text-right mb-4">
+              <h3 className="text-2xl font-semibold text-primary">Web Development Intern</h3>
+              <p className="text-sm text-neutral font-semibold">Aug,2023 - Sept,2023</p>
+            </div>
+            <p className="text-sm text-neutral text-justify">
+            I successfully completed a Web Development Internship at <b>Codsoft</b>, gaining hands-on experience with React.js and Node.js.
             </p>
           </div>
 
-          {/* SSC */}
-          <div className="p-6 bg-[#313131] bg-opacity-90 backdrop-blur-lg rounded-lg shadow-lg w-[300px] hover:shadow-primary duration-300 cursor-pointer">
+          <div className="my-6 md:my-4 md:ml-[200px] p-6 bg-[#313131] bg-opacity-90 backdrop-blur-lg rounded-lg shadow-lg w-[300px] hover:shadow-primary duration-300 cursor-pointer">
             <div className="text-right mb-4">
-              <h3 className="text-2xl font-semibold text-primary">SSC</h3>
-              <p className="text-sm text-neutral font-semibold">2018 - 2021</p>
+              <h3 className="text-2xl font-semibold text-primary">
+              Web Development Intern
+              </h3>
+              <p className="text-sm text-neutral font-semibold">Aug,2023 - Sept,2023</p>
             </div>
             <p className="text-sm text-neutral text-justify">
-              I have passed the Senior Secondary Certificate (SSC) with the
-              highest result <b>GPA - 88</b>
+            I successfully completed a Web Development Internship at <b>Dabotics</b>, gaining hands-on experience with HTML, CSS and JavaScript.
             </p>
           </div>
         </div>

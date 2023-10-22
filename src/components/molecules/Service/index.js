@@ -3,12 +3,11 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { BiPalette } from "react-icons/bi";
 import { DiAtom } from "react-icons/di";
-import { FiServer } from "react-icons/fi";
+import { FiServer, FiSliders, FiRewind, FiRepeat } from "react-icons/fi";
 import {
   headingAnimation,
   sectionBodyAnimation,
 } from "../../../hooks/useAnimation";
-import { BottomLine } from "../../../components";
 
 const Service = () => {
   const [ref, inView] = useInView();
@@ -29,43 +28,43 @@ const Service = () => {
       title: "Front End Development",
       icon: <DiAtom />,
       description:
-        "As a Front-end developer, I would love to develope any front-end application using React and its libraries.",
+        "As a Front-end developer, I excel in crafting applications using React and its libraries, ensuring seamless and user-friendly experiences.",
     },
     {
       id: 2,
       title: "MERN Development",
       icon: <FiServer />,
       description:
-        "I am very familiar with NodeJS, Express JS, and MongoDB/Mongoose. So I can build full-stack application with MERN.",
+        "I have extensive expertise in Node.js, Express.js, and MongoDB/Mongoose, enabling me to develop robust MERN full-stack applications proficiently.",
     },
     {
       id: 3,
       title: "Web Design",
       icon: <BiPalette />,
       description:
-        "I also provide Fully Responsive Static Website Design with HTML, CSS, Bootstrap, Tailwind.",
+        "I offer fully responsive static website designs using HTML, CSS, and Bootstrap, ensuring seamless user experiences across all devices.",
     },
-    // {
-    //   id: 4,
-    //   title: "Web Management",
-    //   icon: <FiServer />,
-    //   description:
-    //     "I will manage any kinds of website. Data Management, Component management, Service management and so on.",
-    // },
-    // {
-    //   id: 5,
-    //   title: "Backend Development",
-    //   icon: <FiServer />,
-    //   description:
-    //   "MVC Architectural Backend Development with Mongoose (Schema, Model etc) to manage the server easily.",
-    // },
-    // {
-    //   id: 6,
-    //   title: "Database Management",
-    //   icon: <FiServer />,
-    //   description:
-    //     "Connecting Web Database to the server. Fixing All kinds of issue with related to database with database advanced operators.",
-    // },
+    {
+      id: 4,
+      title: "Wordpress Development",
+      icon: <FiRepeat />,
+      description:
+        "I specialize in WordPress development, creating customized and user-friendly websites that meet clients' unique needs, enhancing their online presence effectively.",
+    },
+    {
+      id: 5,
+      title: "Logo Design",
+      icon: <FiRewind />,
+      description:
+      "Professional logo design services. Unique, memorable logos tailored to your brand identity, leaving a lasting impression on your audience.",
+    },
+    {
+      id: 6,
+      title: "Django Development",
+      icon: <FiSliders />,
+      description:
+        "Efficient Django Development. Tailored solutions for robust, scalable, and high-performance web applications, designed to optimize your digital presence.",
+    },
   ];
   return (
     <div className="py-20 parent"
@@ -77,11 +76,10 @@ const Service = () => {
         animate={viewDiv && "visible"}
         variants={headingAnimation}
       >
-        <h3 className="text-center text-neutral">What I Provide</h3>
-        <h1 className="text-4xl font-semibold text-center">
-          My <span className="text-primary">Services</span>
-        </h1>
-        <BottomLine />
+        <div className="section__title">
+          <h2>Our features</h2>
+          <p>Launch Your Business with My Exceptional Services.</p>
+        </div>
       </motion.div>
 
       <motion.div

@@ -53,7 +53,8 @@ const ProjectDetails = () => {
               <LazyLoadImage
                 placeholderSrc={placeholderImage}
                 src={image}
-                className="project_image object-cover"
+                className="project_image object-cover w-100"
+                style={{height: "300px", width: "100%"}}
               />
             </div>
           </div>

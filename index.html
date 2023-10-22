@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.color-picker {
+    text-align: center;
+}
+
+#color-code {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+    </style>
+    <title>Color Picker</title>
+</head>
+<body>
+    <div class="color-picker">
+        <input type="color" id="color-input">
+        <div id="color-code"></div>
+    </div>
+
+    <script>
+        const colorInput = document.getElementById('color-input');
+const colorCode = document.getElementById('color-code');
+
+colorInput.addEventListener('input', function() {
+    const selectedColor = colorInput.value;
+    colorCode.textContent = `Selected Color: ${selectedColor}`;
+    colorCode.style.color = selectedColor;
+});
+
+colorCode.addEventListener('click', function() {
+    // Create a new text area element
+    const textArea = document.createElement('textarea');
+    textArea.value = colorInput.value;
+
+    // Append the text area to the DOM
+    document.body.appendChild(textArea);
+
+    // Select the text in the text area
+    textArea.select();
+    textArea.setSelectionRange(0, 99999); // For mobile devices
+
+    // Copy the text to the clipboard
+    document.execCommand('copy');
+
+    // Remove the temporary text area
+    document.body.removeChild(textArea);
+
+    // Show a message to indicate successful copy
+    alert(`Color code ${colorInput.value} has been copied to the clipboard!`);
+});
+
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

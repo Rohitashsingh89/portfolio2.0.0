@@ -11,7 +11,6 @@ import {
   headingAnimation,
   sectionBodyAnimation,
 } from "../../../hooks/useAnimation";
-import { BottomLine } from "../../../components";
 
 const Testimonial = () => {
   const [ref, inView] = useInView();
@@ -59,11 +58,10 @@ const Testimonial = () => {
         animate={viewDiv && "visible"}
         variants={headingAnimation}
       >
-        <h3 className="text-center text-neutral">What My Clients Say</h3>
-        <h1 className="text-4xl font-semibold text-center text-primary">
-          Testimonials
-        </h1>
-        <BottomLine />
+        <div className="section__title">
+          <h2>Testimonials</h2>
+          <p>What My Clients Say.</p>
+        </div>
       </motion.div>
 
       <motion.div

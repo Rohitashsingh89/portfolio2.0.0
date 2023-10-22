@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import placeholderImage from "../../../assets/placeholder.jpg";
 import blogs from "../../../Utils/blogs";
 import { FaAngleDoubleRight, FaAngleDoubleLeft } from "react-icons/fa";
-import { BottomLine } from "../../../components";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import {
@@ -53,10 +52,10 @@ const BlogIndex = () => {
         animate={viewDiv && "visible"}
         variants={headingAnimation}
       >
-        <h1 className="text-3xl font-semibold text-center">
-          New <span className="text-primary">Information</span>
-        </h1>
-        <BottomLine />
+        <div className="section__title">
+          <h2>My Blogs</h2>
+          <p>Explore My Blogs.</p>
+        </div>
       </motion.div>
       <div className="mt-10">
         <motion.div
