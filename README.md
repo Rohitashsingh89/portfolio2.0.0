@@ -1,4 +1,4 @@
-<h1 align ="center" >Rohitash Singh | The Portfolio</h1>
+<h1 align ="center" >🚀Rohitash Singh | The Portfolio🚀</h1>
 
   * [Pages](#pages)
   * [Technologies used](#technologies-used)
