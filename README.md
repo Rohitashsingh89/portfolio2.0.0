@@ -1,4 +1,4 @@
-<h1 align ="center" >Rohitash Singh | Portfolio</h1>
+<h1 align ="center" >Rohitash Singh | The Portfolio</h1>
 
   * [Pages](#pages)
   * [Technologies used](#technologies-used)
@@ -25,3 +25,16 @@ This project was created using the following technologies.
  - [Tailwind CSS](https://tailwindcss.com/) - For User Interface
 - [React Hooks  ](https://reactjs.org/docs/hooks-intro.html) - For managing and centralizing application state
 - [daisyUI  ](https://daisyui.com/docs/changelog/) - For User Interface
+
+
+## Usage
+
+- Register a new account or log in if you already have one.
+- Create and publish your blogs, categorize them, and engage with your readers.
+- Use the intuitive editor to craft visually appealing blog posts.
+- Interact with the blogging platform from various devices seamlessly.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
