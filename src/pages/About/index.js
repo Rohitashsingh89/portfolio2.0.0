@@ -35,7 +35,7 @@ const About = () => {
             }}
           >
             <img
-              src="https://rohitashsingh.vercel.app/static/media/RohitashSingh2.1e93782a6d4135350e6d.png"
+              src="https://user-images.githubusercontent.com/93479842/277568593-7da5432c-d34e-4237-94d9-0db0f21e8537.png"
               alt="Rohitash Singh"
               className="p-12 w-70 h-70 transform translate-y-[-12%] object-cover" style={{borderRadius: "150px"}}
               title="Rohitash Singh"
