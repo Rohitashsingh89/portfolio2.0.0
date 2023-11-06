@@ -38,7 +38,7 @@ const Project = () => {
   };
 
   return (
-    <div className={`${location.pathname !== "/" && "pt-16"}`}>
+    <div className={`${location.pathname !== "/" && "pt-16"} bg-svg `}>
       <div className="parent py-12">
         <motion.div
           initial="hidden"
