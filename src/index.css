@@ -145,7 +145,6 @@ code {
   background-size: cover;
   background-position: center center;
   color: #fff;
-  filter: brightness(1.5); 
   position: relative;
 }
 
